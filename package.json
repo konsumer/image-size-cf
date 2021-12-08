@@ -1,0 +1,31 @@
+{
+  "name": "image-size-cf",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "image-size for cloudflare workers",
+  "scripts": {
+    "build": "npx -y microbundle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/image-size/image-size.git"
+  },
+  "keywords": [],
+  "author": "David Konsumer <konsumer@jetboystudio.com> (https://konsumer.js.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/image-size/image-size/issues"
+  },
+  "homepage": "https://github.com/image-size/image-size",
+  "dependencies": {
+    "buffer": "^6.0.3"
+  },
+  "source": "./src/index.js",
+  "exports": {
+    "require": "./dist/image-size-cf.cjs",
+    "default": "./dist/image-size-cf.modern.js"
+  },
+  "main": "./dist/image-size-cf.cjs",
+  "module": "./dist/image-size-cf.module.js",
+  "unpkg": "./dist/image-size-cf.umd.js"
+}
